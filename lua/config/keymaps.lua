@@ -44,10 +44,9 @@ map("t", "<C-k>", "<C-\\><C-N><C-w>k", opts)
 map("n", "<leader>S", ":%s/\\<<C-r><C-w>\\>//g<Left><Left>", { desc = "Search and replace" })
 map("n", "<leader>;", "A;<esc>", { desc = "Append semicolon" })
 map("n", "<leader>,", "A,<esc>", { desc = "Append comma" })
-unmap("n", "<leader>ff")
-map({ "n", "v" }, "<leader>ff", function()
-  LazyVim.format({ force = true })
-end, { desc = "Format" })
+map("n", "<leader>ff", "<cmd>lua LazyVim.format({force =true})<cr>", { desc = "Format" })
+
+
 
 -- ## Toggle ##
 map("n", "<leader>af", "<cmd>set foldmethod=indent<cr>", { desc = "Fold indent" })
@@ -69,3 +68,7 @@ map("n", "<leader>gj", "<cmd>Gitsigns next_hunk<cr>", { desc = "Git Next Hunk" }
 map("n", "<leader>gk", "<cmd>Gitsigns prev_hunk<cr>", { desc = "Git Previous Hunk" })
 map("n", "<leader>gr", "<cmd>Gitsigns reset_hunk<cr>", { desc = "Git Reset Hunk" })
 map("n", "<leader>ga", "<cmd>Gitsigns stage_hunk<cr>", { desc = "Git Stage Hunk" })
+
+-- ## Search ##
+map("n", "<leader>sf", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Search document symbols" })
+map("n", "<leader>sF", "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", { desc = "Search workspace symbols" })

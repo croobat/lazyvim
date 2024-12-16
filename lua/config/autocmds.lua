@@ -9,6 +9,7 @@
 -- dont list quickfix buffers
 local autocmd = vim.api.nvim_create_autocmd
 
+-- Don't list quickfix buffers
 autocmd("FileType", {
   pattern = "qf",
   callback = function()
