@@ -3,7 +3,7 @@ return {
   opts = {
     spec = {
       {
-        { "<leader>a", group = "toggle" },
+        { "<leader>z", group = "toggle" },
       },
     },
   },
