@@ -1,6 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.telescope",
     "lazyvim.plugins.extras.formatting.prettier",
@@ -11,6 +12,7 @@
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.scala",
+    "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.vue",
     "lazyvim.plugins.extras.linting.eslint",
