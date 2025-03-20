@@ -46,6 +46,8 @@ map("n", "<leader>;", "A;<esc>", { desc = "Append semicolon" })
 map("n", "<leader>,", "A,<esc>", { desc = "Append comma" })
 map("n", "<leader>ff", "<cmd>lua LazyVim.format({force =true})<cr>", { desc = "Format" })
 
+map("n", "<leader>ce", "<cmd>EslintFixAll<cr>", { desc = "Eslint Fix All" })
+
 -- ## Toggle ##
 map("n", "<leader>zf", "<cmd>set foldmethod=indent<cr>", { desc = "Fold indent" })
 map("n", "<leader>zF", "<cmd>set foldmethod=marker<cr>", { desc = "Fold mark" })
