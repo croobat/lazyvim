@@ -8,9 +8,9 @@ return {
     },
 
     sources = {
-      default = { "lsp", "path", "snippets", "buffer" },
+      default = { "snippets", "lsp", "path", "buffer" },
       compat = {},
-      min_keyword_length = 2,
+      min_keyword_length = 1,
     },
 
     cmdline = {
