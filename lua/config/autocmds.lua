@@ -113,10 +113,18 @@ autocmd("CmdWinEnter", {
   end,
 })
 
--- Auto export png when saving mermaid
-autocmd("BufWritePost", {
-  pattern = "*.mmd",
-  callback = function()
-    vim.cmd([[silent! !mmdc -i % -o %:r.png --theme forest -s 2]])
-  end,
+-- colorcolumn of 80
+autocmd("FileType", {
+	pattern = { "markdown", "mermaid", "text", "txt" },
+	callback = function()
+		vim.opt_local.colorcolumn = "80"
+	end,
 })
+
+-- Auto export png when saving mermaid
+-- autocmd("BufWritePost", {
+--   pattern = "*.mmd",
+--   callback = function()
+--     vim.cmd([[silent! !mmdc -i % -o %:r.png --theme forest -s 2]])
+--   end,
+-- })
